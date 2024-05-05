@@ -1,0 +1,24 @@
+
+//ls-files-List all files which tracking
+git switch 
+
+// creating branch for detached commit id
+git branch detached-branch 25287935f2209b121b49ec7bfa63092e0c72c6f7
+
+//merge detached branch to master
+git switch master
+git merge detached-branch
+
+//When file is added and done changes, need to discard the changes
+git restore sample.txt
+
+//When file created and updated but it is untracking file, clean -dn will ask want to remove
+git clean -dn
+
+//clean -df It will clean untracking file 
+git clean -df
+
+//Scenario- When file is added is staged and discard
+
+git add .
+git checkout sample.txt

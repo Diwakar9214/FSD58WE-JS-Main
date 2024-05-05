@@ -1,0 +1,24 @@
+//Scenario 3 File is add and staged, commit it. Need to discard
+git add .
+git commit -m "FIle is updated"
+git reset --soft HEAD-1
+git status
+git reset .\Sample.txt
+git restore Sample.txt
+
+//Remove 1 commit
+// Now moving stage to unstagged
+git reset --soft HEAD-1
+git status
+git reset .\Sample.txt
+git restore Sample.txt
+
+//Scenario 4 : Deleted branch
+git branch -D sixth-ded
+
+//Scenario 5 : Permantly Delete commit
+ git reset HEAD~1
+ git status
+ git reset -hard HEAD~1
+
+ 

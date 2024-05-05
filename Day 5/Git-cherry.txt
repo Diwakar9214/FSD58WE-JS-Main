@@ -1,0 +1,16 @@
+//1 comit pickup in one  branch and add in another branch on master branch
+git checkout feature
+git add .
+git commit -m "nine"
+git add .
+git commit -m "ten"
+
+git checkout master
+git log
+git cherry-pick 709e6c3b1af3d7085174422d84163cfe09b01ca0
+git cherry-pick --abort // when conflict want to avoid
+
+
+git cherry-pick --continue
+//2 commit cherry pick
+git cherry-pick 709e6c3b1af3d7085174422d84163cfe09b01ca0

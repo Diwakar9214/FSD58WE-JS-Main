@@ -1,0 +1,31 @@
+// Stash-untracking file
+git status
+git stash 
+git stash list
+
+//stash apply-file is staged and modified but want to commit keep aside
+git switch master
+git stash 
+git stash list
+git stash apply
+
+git switch feature
+git stash apply
+git commit -m "Resolved"
+
+//The git stash pop command helps us to remove or throw away the latest or the topmost stash
+git stash pop
+git stash push -m "My text"
+
+//Deleting a stash list-2
+git stash  drop 2    
+//Deleting a stash list all
+git stash clear
+
+//Keep data file for 30 day to restore
+git reflog
+git reset --hard 33abb80
+
+//merge data feature to master(Regressivelly merge in master)
+git checkout fourth-branch
+git merge master --no-ff

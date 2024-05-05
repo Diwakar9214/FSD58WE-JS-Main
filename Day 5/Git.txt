@@ -1,0 +1,32 @@
+
+Go to Terminal
+----------------------
+
+//Initialized Git Repository
+git init 
+
+// Git  will check any file is untracked(unstagged file) or not
+git status 
+
+// Git will add particular file to stage area for commit
+git add Git.txt
+
+// Git will add all file to stage area for commit
+git add .
+
+//Git will commit(save) a file 
+git commit -m "Add Git file commit"
+
+//Were we see branch is Repository and default branch is Master
+git branch
+
+//Git will create a new branch feature
+git branch feature
+git branch
+
+// feature
+//* master - It is show green, current branch
+
+//Moving to feature branch
+git checkout feature
+
